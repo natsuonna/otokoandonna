@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
         <meta charset="utf-8">
@@ -7,20 +7,20 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
        
-       	<!-- this is the parallax effect --> 
+        <!-- this is the parallax effect --> 
         <link rel="stylesheet" href="css/main.css">
         
         <!-- this is the full screen menu --> 
         <link rel="stylesheet" href="css/style.css">
 
-		<!-- this is the parallax effect --> 
+        <!-- this is the parallax effect --> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-		<!-- this is the full screen menu --> 
+        <!-- this is the full screen menu --> 
         <link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
         
 </head>
-<body>
+        <body>
 
         <a href="index.html"><div class="logo"></div></a> 
 
@@ -30,5 +30,52 @@
             <p>View type 1 <a href="http://codepen.io/PaulVanO/pen/XJYGNQ" target="_blank">here</a></p>
         </div>
 
-</body>
-</html>        
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li ><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="tribes.html">TRIBES</a></li>
+                    <li><a href="stories.html">STORIES</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- this is the parallax effect --> 
+        <div class="items">
+            <div class="items__inner" id="js-scene">
+                <div class="items__layer layer" data-depth="0.85"><div class="items__item" data-title="to an unknown"></div></div>
+
+                <div class="items__layer layer" data-depth="0.70"><div class="items__item" data-title="love"></div></div>
+
+                <div class="items__layer layer" data-depth="0.65"><div class="items__item" data-title="that you"></div></div>
+
+                <div class="items__layer layer" data-depth="1.20"><div class="items__item" data-title="take me"></div></div>
+
+                <div class="items__layer layer" data-depth="0.00"><a href="place.html"><div class="items__item" data-title="place"></div></div></a>
+            </div>
+        </div>
+
+        <!-- this is the full screen menu --> 
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+
+        <script src="js/index.js"></script> <!-- change this --> 
+
+
+        <!-- this is the parallax effect --> 
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+
+
+        </body> 
+</html>
+      

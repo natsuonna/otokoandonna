@@ -1,0 +1,107 @@
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  &__inner {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 800px;
+    background: #fff;
+  }
+  &__layer &__item {
+    position: absolute;
+    box-shadow: 0 32px 40px -20px rgba(0,0,0,.25);
+    &:after {
+      content: attr(data-title);
+      position: absolute;
+      line-height: 20px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: all .5s ease;
+      visibility: hidden;
+      opacity: 0;
+    }
+    &:hover {
+      &:after {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &__layer:nth-child(1) &__item {
+    $color: #2E385C;
+    top: 200px;
+    left: 120px;
+    width: 340px;
+    height: 340px;
+    background: $color;
+    &:after {
+      top: -23px;
+      left: 0;
+      color: $color;
+    }
+  }
+  &__layer:nth-child(2) &__item {
+    $color: #5A5050;
+    top: 440px;
+    left: 400px;
+    width: 240px;
+    height: 200px;
+    background: $color;
+    &:after {
+      bottom: -23px;
+      right: 0;
+      color: $color;
+    }
+  }
+  &__layer:nth-child(3) &__item {
+    $color: #366C6F;
+    top: 400px;
+    left: 160px;
+    width: 300px;
+    height: 300px;
+    background: $color;
+    &:after {
+      bottom: -23px;
+      left: 0;
+      color: $color;
+    }
+  }
+  &__layer:nth-child(4) &__item {
+    $color: #E9EDEA;
+    top: 100px;
+    left: 400px;
+    width: 350px;
+    height: 480px;
+    background: $color;
+    &:after {
+      top: -23px;
+      right: 0;
+      color: darken($color, 9%);
+    }
+  }
+  &__layer:nth-child(5) &__item {
+    $color: #DBBEB9;
+    top: 300px;
+    left: 300px;
+    width: 200px;
+    height: 200px;
+    background: $color;
+    &:after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      margin: auto;
+      text-align: center;
+      color: darken($color, 12%);
+    }
+  }
+}

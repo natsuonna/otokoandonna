@@ -1,0 +1,50 @@
+/* THIS IS THE PLACE PAGE */
+
+body{
+	background-repeat: repeat;	
+	/*background-image: url(../photos/neverending.gif);*/ 
+	background-size: 1500px;
+	background-position: center; 
+	background-attachment: fixed;
+	padding-bottom: 100px;
+	width: 100%; 
+	background-color: #ffdada;
+} 
+
+.logo{
+	background-image: url(../images/logo.png);
+	top: 10px;
+	left: 100px;
+	height: 300px;
+	width: 400px;
+	position: absolute;
+	z-index: 1;
+}
+
+.main_img{
+	background-image: url(../images/about.gif);
+	top: 160px;
+	left: 280px;
+	height: 800px;
+	width: 1200px;
+	position: absolute;
+	background-size: 500px 600px;
+    background-repeat: no-repeat;
+}
+
+.copy{
+	background-image: url(../images/about.png);
+	top: 200px;
+	left: 700px;
+	height: 800px;
+	width: 600px;
+	position: absolute;
+	background-size: 600px 600px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+
+
+
