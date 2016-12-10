@@ -1,0 +1,12 @@
+.beauty {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background: purple;
+    z-index: 0;
+    color: white;
+    text-align: center;
+}
+.beauty:hover {
+	cursor: pointer;
+}
